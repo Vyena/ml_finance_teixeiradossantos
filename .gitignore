@@ -1,0 +1,36 @@
+# Datos y modelos grandes
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+models/**/*.pkl
+models/**/*.joblib
+models/**/*.h5
+
+# Credenciales y secretos
+.env
+*.key
+credentials.json
+secrets.yaml
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Entornos
+.venv/
+venv/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Outputs temporales
+*.log
+mlruns/
