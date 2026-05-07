@@ -1,4 +1,4 @@
-FEATURES_PY = '''
+
 import numpy as np
 import pandas as pd
 
@@ -101,6 +101,7 @@ def build_woe_tables(
 def transform_woe(
     df: pd.DataFrame,
     woe_tables: dict[str, pd.DataFrame]
+    
 ) -> pd.DataFrame:
     """Reemplaza cada feature por su valor WoE según la tabla de entrenamiento."""
 
@@ -123,7 +124,6 @@ def transform_woe(
             temp_bins.astype(str).map(mapping)
         )
 
-    return transformed_df
-'''
+    transformed_df = transformed_df.fillna(0)
 
-print(FEATURES_PY)
+    return transformed_df
