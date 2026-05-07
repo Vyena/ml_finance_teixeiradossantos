@@ -34,3 +34,4 @@ Thumbs.db
 # Outputs temporales
 *.log
 mlruns/
+models/baseline_v1/
