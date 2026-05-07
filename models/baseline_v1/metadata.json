@@ -1,0 +1,40 @@
+{
+  "model_name": "Logistic Regression",
+  "version": "1.0",
+  "author": "teixeiradossantos",
+  "dataset": "data/raw/bankloan.csv",
+  "n_train_samples": 1191,
+  "n_test_samples": 298,
+  "features_selected": [
+    "Age",
+    "Employ",
+    "Address",
+    "Income",
+    "Leverage",
+    "Creddebt",
+    "MonthlyLoad",
+    "OthDebtRatio"
+  ],
+  "hyperparameters": {
+    "C": 0.1,
+    "class_weight": null,
+    "dual": false,
+    "fit_intercept": true,
+    "intercept_scaling": 1,
+    "l1_ratio": null,
+    "max_iter": 1000,
+    "multi_class": "deprecated",
+    "n_jobs": null,
+    "penalty": "l2",
+    "random_state": 42,
+    "solver": "lbfgs",
+    "tol": 0.0001,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "metrics": {
+    "auc_test": 0.6585,
+    "costo_total_test": 43600
+  },
+  "saved_at": "2026-05-07"
+}
