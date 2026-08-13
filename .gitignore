@@ -35,3 +35,9 @@ Thumbs.db
 *.log
 mlruns/
 models/baseline_v1/
+
+# Datos confidenciales - Proyecto final
+notebooks/Proyecto final/data/raw/*
+notebooks/Proyecto final/data/processed/*
+!notebooks/Proyecto final/data/raw/.gitkeep
+!notebooks/Proyecto final/data/processed/.gitkeep
